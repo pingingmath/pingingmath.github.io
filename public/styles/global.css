@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "TeX Gyre Adventor";
+  src: url("../fonts/texgyreadventor-bold.otf");
+}
+
 * {
   margin: 0;
   padding: 0;
