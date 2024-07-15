@@ -367,3 +367,12 @@ section.reach-me .container .links {
     width: 300px;
   }
 }
+
+@media screen and (max-width: 350px) {
+  section.hero .container .links {
+    /* width: 300px; */
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
