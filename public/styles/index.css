@@ -338,6 +338,10 @@ section.reach-me .container .links {
     font-size: 55px;
   }
 
+  section.hero .container .links {
+    width: 300px;
+  }
+
   section.experiences .container .experience article {
     width: 300px;
   }
