@@ -21,11 +21,7 @@ html {
 a.link {
   text-decoration: none;
   font-weight: 500;
-  font-size: 18px;
-}
-
-a.link:hover {
-  text-decoration: underline;
+  font-size: 22px;
 }
 
 p {
@@ -63,6 +59,7 @@ body > header .container .logo p {
 
 body > header .container nav.show {
   position: absolute;
+  z-index: 2;
   left: 0;
   top: 90px;
   display: block;
@@ -100,6 +97,9 @@ body > header .container .hamburger {
   margin-left: auto;
 }
 
+body > header .container .hamburger:hover {
+  cursor: pointer;
+}
 body > footer .container {
   border-top: 1px solid grey;
   width: var(--content-width);
@@ -113,6 +113,32 @@ body > footer .container {
 body > footer .container .social {
   display: flex;
   gap: 10px;
+}
+
+@media screen and (min-width: 1271px) {
+  a.link::after {
+    content: "";
+    display: flex;
+    border-bottom: 1px solid white;
+    transform: scaleX(0);
+    transition: 0.2s ease-in-out;
+  }
+
+  a.link:hover::after {
+    transform: scaleX(1);
+  }
+
+  body > header .container ul li a::after {
+    content: "";
+    display: flex;
+    border-bottom: 1px solid white;
+    transform: scaleX(0);
+    transition: 0.2s ease-in-out;
+  }
+
+  body > header .container ul li a:hover::after {
+    transform: scaleX(1);
+  }
 }
 
 @media screen and (max-width: 1270px) {

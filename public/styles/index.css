@@ -11,7 +11,6 @@ section.hero .container {
   margin: auto;
   position: relative;
   top: -50px;
-  z-index: -1;
 }
 
 section.hero .container header h1,
@@ -34,10 +33,10 @@ section.hero .container header h1 span {
 }
 
 section.hero .container .links {
-  width: 270px;
+  width: 350px;
   display: flex;
   justify-content: space-between;
-  margin: 40px auto 0px auto;
+  margin: 70px auto 0px auto;
 }
 
 /* hero section endss here */
@@ -208,7 +207,7 @@ section.reach-me .container header h2 {
   text-align: center;
 }
 section.reach-me .container .links {
-  width: 250px;
+  width: 350px;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -235,6 +234,10 @@ section.reach-me .container .links {
 }
 
 @media screen and (max-width: 1100px) {
+  section.experiences {
+    margin-top: 0px;
+  }
+
   section.experiences .container .option-bar {
     display: none;
   }
@@ -249,7 +252,7 @@ section.reach-me .container .links {
   section.experiences .container .experience article {
     height: 300px;
     padding-top: 0px;
-    margin-top: 50px;
+    margin-top: 0px;
   }
 
   section.experiences .container .experience .experience-img {
@@ -278,6 +281,9 @@ section.reach-me .container .links {
 }
 
 @media screen and (max-width: 700px) {
+  section.experiences {
+    margin-top: -70px;
+  }
   section.experiences .container .experience .experience-img {
     scale: 0.9;
   }
