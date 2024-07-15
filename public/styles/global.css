@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Urbanist";
+  color: white;
+}
+
+:root {
+  --content-width: 1200px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* a {
+  text-decoration: none;
+}
+
+a.link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+a.link:hover {
+  text-decoration: underline;
+}
+
+p {
+  line-height: 1.6;
+  color: hsl(0, 0%, 85%);
+}
+
+h2 {
+  font-family: "Poiret One";
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 1;
+}
+
+body {
+  background-color: #2b2d42;
+}
+
+body > header {
+  height: 90px;
+}
+
+body > header .container {
+  width: var(--content-width);
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+body > header .container .logo p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+body > header .container nav.show {
+  position: absolute;
+  left: 0;
+  top: 90px;
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  background-color: #2b2d42;
+}
+
+body > header .container nav.show ul {
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+body > header .container ul {
+  display: flex;
+  margin-left: 50px;
+  gap: 20px;
+}
+
+body > header .container ul li {
+  list-style: none;
+}
+
+body > header .container ul li a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+body > footer {
+  height: 90px;
+}
+
+body > header .container .hamburger {
+  display: none;
+  margin-left: auto;
+}
+
+body > footer .container {
+  border-top: 1px solid grey;
+  width: var(--content-width);
+  margin: 100px auto 0px auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body > footer .container .social {
+  display: flex;
+  gap: 10px;
+}
+
+@media screen and (max-width: 1270px) {
+  :root {
+    --content-width: 1050px;
+  }
+
+  body > header .container nav {
+    display: none;
+  }
+
+  body > header .container .logo {
+    position: absolute;
+    left: 50px;
+  }
+
+  body > header .container .hamburger {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  :root {
+    --content-width: 950px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  :root {
+    --content-width: 850px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  :root {
+    --content-width: 750px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  :root {
+    --content-width: 650px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  :root {
+    --content-width: 550px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  :root {
+    --content-width: 450px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  :root {
+    --content-width: 350px;
+  }
+
+  h2 {
+    font-size: 45px;
+    margin-bottom: 70px;
+  }
+
+  body > footer .container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  :root {
+    --content-width: 300px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+}

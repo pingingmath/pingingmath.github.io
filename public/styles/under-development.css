@@ -1,0 +1,27 @@
+/* conversation section starts here */
+section.development {
+  margin-top: 190px;
+  height: calc(100vh - 290px);
+}
+section.development .container {
+  width: var(--content-width);
+  margin: auto;
+}
+
+section.development .container header {
+  border-bottom: 1px solid grey;
+  height: 100px;
+}
+
+section.development .container header span {
+  font-family: "Poiret One";
+  color: #a9b1ce;
+}
+
+/* conversation section ends here */
+
+@media screen and (max-width: 700px) {
+  section.development .container header {
+    height: 150px;
+  }
+}

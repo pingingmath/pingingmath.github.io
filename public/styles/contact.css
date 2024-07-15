@@ -1,0 +1,50 @@
+/* conversation section starts here */
+section.conversation {
+  margin-top: 190px;
+  height: calc(100vh - 290px);
+}
+section.conversation .container {
+  width: var(--content-width);
+  margin: auto;
+}
+
+section.conversation .container header {
+  border-bottom: 1px solid grey;
+  height: 100px;
+}
+
+section.conversation .container header span {
+  font-family: "Poiret One";
+  color: #a9b1ce;
+}
+
+section.conversation .container .links {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+section.conversation .container .links li {
+  list-style: none;
+}
+
+section.conversation .container .links a {
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+section.conversation .container .links nav ul {
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px 0px;
+}
+
+@media screen and (max-width: 700px) {
+  section.conversation .container header {
+    height: 150px;
+  }
+}
+
+/* conversation section ends here */

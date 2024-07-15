@@ -1,0 +1,359 @@
+/* hero section starts here */
+
+section.hero {
+  height: calc(100vh - 90px);
+  display: flex;
+  align-items: center;
+}
+
+section.hero .container {
+  width: var(--content-width);
+  margin: auto;
+  position: relative;
+  top: -50px;
+  z-index: -1;
+}
+
+section.hero .container header h1,
+section.hero .container header h1 span {
+  font-family: "Poiret One";
+}
+
+section.hero .container header h1 {
+  width: 700px;
+  margin: auto;
+  text-align: center;
+  font-family: "Poiret One";
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+section.hero .container header h1 span {
+  color: #a9b1ce;
+}
+
+section.hero .container .links {
+  width: 270px;
+  display: flex;
+  justify-content: space-between;
+  margin: 40px auto 0px auto;
+}
+
+/* hero section endss here */
+
+/* projects section starts here */
+section.projects .container {
+  /* width: var(--content-width); */
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+section.projects .container .projects {
+  width: 1500px;
+  /* height: 960px; */
+}
+
+/* projects section ends here */
+
+/* expericens section starts here */
+
+section.experiences {
+  margin-top: 200px;
+}
+section.experiences .container {
+  width: var(--content-width);
+  margin: auto;
+}
+
+section.experiences .container .option-bar {
+  width: 530px;
+  height: 40px;
+  background-color: #252638;
+  border-radius: 20px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+section.experiences .container .option-bar .option {
+  width: 33.33%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+section.experiences .container .option-bar .option:hover {
+  cursor: pointer;
+}
+
+section.experiences .container .option-bar .option img {
+  margin-left: 8px;
+}
+
+section.experiences .container .option-bar .option.active {
+  transition: 0.1s ease-in-out;
+  background-color: #a9b1ce;
+}
+
+section.experiences .container .option-bar p {
+  font-size: 17px;
+  font-family: "TeX Gyre Adventor";
+  color: white;
+  font-weight: bold;
+  position: relative;
+  top: 2px;
+}
+
+section.experiences .container .option-bar .option.active p {
+  color: #252638;
+}
+
+section.experiences .container .experiences-container {
+  width: var(--content-width);
+  height: 500px;
+  margin-top: 120px;
+  position: relative;
+}
+
+section.experiences .container .experience {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+section.experiences .container .experience.show {
+  opacity: 1;
+}
+
+section.experiences .container .experience .experience-img {
+  width: 624px;
+  height: 500px;
+}
+
+section.experiences .container .experience article {
+  width: 450px;
+  height: 500px;
+  padding-top: 120px;
+}
+
+section.experiences .container .experience article header p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* experiecen section ends here */
+
+/* technologies section starts here */
+
+section.technologies {
+  margin-top: 200px;
+}
+
+section.technologies .container {
+  width: var(--content-width);
+  margin: auto;
+}
+
+section.technologies .container header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px 0px;
+}
+
+section.technologies .container header h2,
+section.technologies .container header p {
+  width: 450px;
+  text-align: center;
+}
+
+section.technologies .container .techs {
+  width: 800px;
+  display: flex;
+  gap: 50px 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px auto;
+}
+
+section.technologies .container .techs .tech {
+  width: 100px;
+  height: 100px;
+}
+
+/* technologies section ends here */
+
+/* reach me section starts here */
+section.reach-me {
+  margin-top: 250px;
+}
+
+section.reach-me .container {
+  width: var(--content-width);
+  margin: auto;
+}
+
+section.reach-me .container header h2 {
+  width: 400px;
+  margin: auto;
+  text-align: center;
+}
+section.reach-me .container .links {
+  width: 250px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+/* reach me section ends here */
+
+@media screen and (max-width: 1600px) {
+  section.projects .projects {
+    scale: 0.9;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  section.projects .projects {
+    scale: 0.8;
+  }
+}
+@media screen and (max-width: 1270px) {
+  section.experiences .container .experience .experience-img {
+    scale: 0.9;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  section.experiences .container .option-bar {
+    display: none;
+  }
+
+  section.experiences .container .experience {
+    flex-direction: column;
+    align-items: center;
+    opacity: 1;
+    position: static;
+  }
+
+  section.experiences .container .experience article {
+    height: 300px;
+    padding-top: 0px;
+    margin-top: 50px;
+  }
+
+  section.experiences .container .experience .experience-img {
+    scale: 1;
+  }
+
+  section.technologies {
+    margin-top: 1300px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  section.technologies .container .techs {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  section.hero .container header h1 {
+    width: auto;
+  }
+
+  section.technologies .container .techs {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  section.experiences .container .experience .experience-img {
+    scale: 0.9;
+  }
+  section.technologies .container .techs {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section.experiences .container .experience .experience-img {
+    scale: 0.8;
+  }
+  section.technologies .container .techs {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  section.hero .container header h1 {
+    font-size: 60px;
+  }
+
+  section.experiences .container .experience article {
+    width: 350px;
+  }
+
+  section.experiences .container .experience .experience-img {
+    scale: 0.6;
+  }
+
+  section.technologies .container header h2,
+  section.technologies .container header p {
+    width: 350px;
+  }
+
+  section.technologies .container .techs {
+    width: 350px;
+    gap: 30px 10px;
+  }
+
+  section.technologies .container .techs .tech {
+    scale: 0.7;
+  }
+
+  section.reach-me .container header h2 {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  section.hero .container header h1 {
+    font-size: 55px;
+  }
+
+  section.experiences .container .experience article {
+    width: 300px;
+  }
+
+  section.experiences .container .experience .experience-img {
+    scale: 0.5;
+  }
+
+  section.technologies .container header h2,
+  section.technologies .container header p {
+    width: 300px;
+  }
+
+  section.technologies .container .techs {
+    width: 300px;
+  }
+
+  section.technologies .container .techs .tech {
+    scale: 0.7;
+  }
+
+  section.reach-me .container header h2 {
+    width: 300px;
+  }
+}
