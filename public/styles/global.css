@@ -13,6 +13,7 @@
 
 :root {
   --content-width: 1200px;
+  --section-margin: 200px;
 }
 
 html {
@@ -94,7 +95,9 @@ body > header .container ul li a {
 }
 
 body > footer {
+  margin-top: 100px;
   height: 90px;
+  /* background-color: red; */
 }
 
 body > header .container .hamburger {
@@ -108,7 +111,7 @@ body > header .container .hamburger:hover {
 body > footer .container {
   border-top: 1px solid grey;
   width: var(--content-width);
-  margin: 100px auto 0px auto;
+  margin: auto;
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -120,7 +123,7 @@ body > footer .container .social {
   gap: 10px;
 }
 
-@media screen and (min-width: 1271px) {
+@media screen and (min-width: 1270px) {
   a.link::after {
     content: "";
     display: flex;
@@ -187,11 +190,28 @@ body > footer .container .social {
   :root {
     --content-width: 650px;
   }
+
+  body > header .container .hamburger {
+    scale: 0.9;
+  }
 }
 
 @media screen and (max-width: 700px) {
   :root {
     --content-width: 550px;
+  }
+
+  body > header .container .logo p {
+    font-size: 18px;
+  }
+
+  body > header .container .logo {
+    position: absolute;
+    left: 40px;
+  }
+
+  body > header .container nav.show ul {
+    margin-left: 40px;
   }
 }
 
@@ -208,13 +228,16 @@ body > footer .container .social {
 
   h2 {
     font-size: 45px;
-    margin-bottom: 70px;
   }
 
   body > footer .container {
     flex-direction: column;
     padding-top: 20px;
     gap: 10px;
+  }
+
+  body > header .container .hamburger {
+    scale: 0.8;
   }
 }
 
@@ -223,6 +246,59 @@ body > footer .container .social {
     --content-width: 300px;
   }
 
+  h2 {
+    font-size: 40px;
+  }
+
+  body > header .container .logo p {
+    font-size: 16px;
+  }
+
+  body > header .container .logo {
+    left: 30px;
+  }
+
+  body > header .container nav.show ul {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  :root {
+    --content-width: 270px;
+  }
+
+  body > header .container .hamburger {
+    scale: 0.7;
+  }
+}
+
+/* new  */
+
+@media screen and (max-width: 650px) {
+  h2 {
+    font-size: 45px;
+  }
+  a.link {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  a.link {
+    font-size: 16px;
+  }
+
+  p {
+    line-height: 1.3;
+  }
+
+  body > footer .container {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 300px) {
   h2 {
     font-size: 40px;
   }
