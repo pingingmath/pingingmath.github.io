@@ -33,6 +33,7 @@ a.link {
 p {
   line-height: 1.6;
   color: hsl(0, 0%, 85%);
+  font-weight: 500;
 }
 
 h2 {
@@ -43,7 +44,7 @@ h2 {
 }
 
 body {
-  background-color: #1f2024;
+  background-color: #191a1d;
 }
 
 body > header {
